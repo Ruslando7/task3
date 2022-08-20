@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "RobotoRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "RobotoBold";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "CleanVertisingLight";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/CleanVertisingLight/CleanVertisingLight.eot?#iefix") format("embedded-opentype"), url("../fonts/CleanVertisingLight/CleanVertisingLight.woff") format("woff"), url("../fonts/CleanVertisingLight/CleanVertisingLight.ttf") format("truetype");
+}
