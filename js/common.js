@@ -66,24 +66,38 @@ $(document).ready(function() {
         });
     };
 
-    //Аякс отправка форм
-    //Документация: http://api.jquery.com/jquery.ajax/
-    $("form").submit(function (e) {
-        var ths = $(this);
-        e.preventDefault;
+
+    $("#form").on('click', '.button', function (e) {
+        e.preventDefault();
+        var id = $("#form").serialize();
         $.ajax({
             type: "POST",
             url: "mail.php",
-            data: $(this).serialize()
-        }).done(function () {
-            alert("Спасибо за заявку!");
-            setTimeout(function () {
-                var magnificPopup = $.magnificPopup.instance;
-                magnificPopup.close();
-                ths.trigger("reset");
-            }, 1000);
-        });
-    });
+            data: {id:id},
+            success: function () {
+                alert('Данные успешно отправились');
+            },
+            error: function () {
+                alert('Произошла ошибка');
+            }
+        })
+    })
+
+    $("#hidden_form").on('click', '.button', function (e) {
+        e.preventDefault();
+        var id = $("#hidden_form").serialize();
+        $.ajax({
+            type: "POST",
+            url: "mail.php",
+            data: {id:id},
+            success: function () {
+                alert('Данные успешно отправились');
+            },
+            error: function () {
+                alert('Произошла ошибка');
+            }
+        })
+    })
 
 });
 
